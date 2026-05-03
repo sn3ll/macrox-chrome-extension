@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About MacroX — Browser Macro Recorder for Chrome</title>
+  <meta name="description" content="MacroX is a privacy-first Chrome extension that records and replays browser macros. Learn about how it works, who built it, and why it was created.">
+  <link rel="canonical" href="https://sn3ll.github.io/macrox-chrome-extension/about.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/icon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/icon16.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sn3ll.github.io/macrox-chrome-extension/about.html">
+  <meta property="og:title" content="About MacroX — Browser Macro Recorder">
+  <meta property="og:description" content="MacroX is a privacy-first Chrome extension that records and replays browser macros. No code, no setup.">
+  <meta property="og:image" content="https://sn3ll.github.io/macrox-chrome-extension/og-image.png">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .prose {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .prose h2 {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 48px 0 14px;
+      letter-spacing: -0.3px;
+    }
+    .prose p {
+      font-size: 15px;
+      color: var(--text2);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .prose ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    .prose ul li {
+      font-size: 15px;
+      color: var(--text2);
+      line-height: 1.75;
+      margin-bottom: 6px;
+    }
+    .prose strong { color: var(--text); font-weight: 700; }
+    .prose a { color: var(--accent); }
+    .prose hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+
+    /* Stat grid */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 32px 0;
+    }
+    .stat-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px 20px;
+      text-align: center;
+    }
+    .stat-number {
+      font-family: var(--mono);
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: var(--text3);
+      font-weight: 600;
+    }
+
+    /* Permission table */
+    .perm-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 13px;
+    }
+    .perm-table th {
+      text-align: left;
+      padding: 10px 14px;
+      font-size: 11px;
+      font-family: var(--mono);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text3);
+      border-bottom: 1px solid var(--border);
+    }
+    .perm-table td {
+      padding: 12px 14px;
+      color: var(--text2);
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .perm-table td:first-child {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    .perm-table tr:last-child td { border-bottom: none; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .faq-a {
+      font-size: 14px;
+      color: var(--text2);
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <div class="logo-mark">MX</div>
+      <span class="logo-name">MacroX</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li><a href="about.html" style="color:var(--text)">About</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a class="nav-cta" href="https://chrome.google.com/webstore/detail/macrox/EXTENSION_ID" target="_blank" rel="noopener">Add to Chrome</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <div class="prose">
+
+      <div class="section-label">About</div>
+      <h1 class="section-title">Built for people who do things more than once</h1>
+
+      <p>MacroX started with a simple frustration: too much time spent doing the same browser actions over and over — filling the same forms, clicking through the same UI flows, entering the same data in the same fields, day after day.</p>
+
+      <p>Existing solutions were either too technical (Selenium, Playwright), too expensive, or too clunky. MacroX is the browser automation tool that should have always existed: <strong>point, click record, done</strong>.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-number">9</div>
+          <div class="stat-label">Event types recorded</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4×</div>
+          <div class="stat-label">Max playback speed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">0</div>
+          <div class="stat-label">Bytes sent to servers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Sites it works on</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <h2>How MacroX Works</h2>
+
+      <p>MacroX injects a lightweight content script (<code>recorder.js</code>) into the active browser tab when you start recording. It listens for DOM events — clicks, key presses, scroll, input changes — and stores them as a timestamped event log in <code>chrome.storage.local</code>.</p>
+
+      <p>During playback, the event log is replayed by dispatching the same events back to the page in the correct order, with the correct timing, scaled to your chosen speed. A visual cursor overlay shows you exactly what's happening.</p>
+
+      <p><strong>Navigation-safe playback</strong> is handled by the background service worker: when a macro triggers a page navigation, the background detects the new page load and resumes playback from the correct event index — seamlessly continuing the macro across page boundaries.</p>
+
+      <hr>
+
+      <h2>Permissions</h2>
+      <p>MacroX requests only the permissions it genuinely needs:</p>
+
+      <table class="perm-table">
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Why it's needed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>storage</td>
+            <td>Save macros, hotkeys, and settings locally on your device. Nothing leaves your browser.</td>
+          </tr>
+          <tr>
+            <td>activeTab</td>
+            <td>Access the tab you're currently recording or replaying on.</td>
+          </tr>
+          <tr>
+            <td>scripting</td>
+            <td>Inject the recorder script into a tab when you press Record (required for tabs opened before the extension was installed).</td>
+          </tr>
+          <tr>
+            <td>sidePanel</td>
+            <td>Render the MacroX UI in Chrome's native side panel — so you can manage macros without leaving the page you're working on.</td>
+          </tr>
+          <tr>
+            <td>tabs</td>
+            <td>Identify the active tab, resume playback after cross-page navigation, and open the upgrade page.</td>
+          </tr>
+          <tr>
+            <td>&lt;all_urls&gt;</td>
+            <td>MacroX must work on any site you choose to automate. The extension cannot know in advance which sites you'll use — this permission is fundamental to its core purpose.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+
+      <h2>Privacy First</h2>
+
+      <p>MacroX was designed with a strict principle: <strong>your data never leaves your device</strong>.</p>
+
+      <ul>
+        <li>All macros are stored in <code>chrome.storage.local</code> — on your machine, in your browser</li>
+        <li>No analytics, no telemetry, no crash reporting</li>
+        <li>Password fields are explicitly excluded from recording</li>
+        <li>The extension has no backend server — there is nothing to send data to</li>
+        <li>Payment is processed entirely by <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a> / Stripe — we never see your card details</li>
+      </ul>
+
+      <p>→ <a href="privacy.html">Read the full Privacy Policy</a></p>
+
+      <hr>
+
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">Does MacroX work on every website?</div>
+        <div class="faq-a">Yes — MacroX works on any standard web page. Chrome's internal pages (<code>chrome://</code>) and the Chrome Web Store itself are blocked by browser security policy, but everywhere else is fair game.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Does it record passwords?</div>
+        <div class="faq-a">No. MacroX explicitly skips any <code>&lt;input type="password"&gt;</code> field. Password values are never captured or stored.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What happens if the page navigates during playback?</div>
+        <div class="faq-a">MacroX handles this automatically. The background service worker detects the new page load and resumes the macro from where it left off — you don't need to do anything.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Can I assign keyboard shortcuts to macros?</div>
+        <div class="faq-a">Yes. Open a macro in the sidebar, click the hotkey field, and press any combination with at least one modifier key (Ctrl, Alt, Shift, Cmd). MacroX will trigger that macro instantly from any tab. Press F8 at any time to stop recording or replay your last macro.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What's the difference between Free and Pro?</div>
+        <div class="faq-a">The Free plan saves up to 3 macros. Pro unlocks unlimited saved macros for a one-time payment of $4.99. All other features are identical.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Is Pro a subscription?</div>
+        <div class="faq-a">No. It's a one-time payment — pay once, own Pro forever.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Where is my data stored?</div>
+        <div class="faq-a">Entirely on your device using Chrome's <code>storage.local</code> API. Uninstalling the extension removes all stored data.</div>
+      </div>
+
+      <hr>
+
+      <div style="text-align:center;padding:20px 0 10px">
+        <a class="btn-primary" href="https://chrome.google.com/webstore/detail/macrox/EXTENSION_ID" target="_blank" rel="noopener">
+          Add MacroX to Chrome — Free
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div style="display:flex;align-items:center;gap:10px">
+      <div class="logo-mark">MX</div>
+      <span style="font-size:13px;color:var(--text3)">MacroX © 2026</span>
+    </div>
+    <div style="display:flex;gap:20px">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://chrome.google.com/webstore/detail/macrox/EXTENSION_ID" target="_blank" rel="noopener">Chrome Web Store</a>
+    </div>
+  </footer>
+
+</body>
+</html>
