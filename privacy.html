@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — MacroX</title>
+  <meta name="description" content="MacroX Privacy Policy. We don't collect, transmit, or share your data. All recorded macros are stored locally on your device.">
+  <link rel="canonical" href="https://sn3ll.github.io/macrox-chrome-extension/privacy.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/icon32.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .prose {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .prose h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 40px 0 12px;
+      color: var(--text);
+    }
+    .prose h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin: 24px 0 8px;
+      color: var(--text);
+    }
+    .prose p, .prose li {
+      font-size: 14px;
+      color: var(--text2);
+      line-height: 1.75;
+      margin-bottom: 10px;
+    }
+    .prose ul {
+      padding-left: 20px;
+    }
+    .prose ul li {
+      margin-bottom: 6px;
+    }
+    .prose a { color: var(--accent); }
+    .prose strong { color: var(--text); font-weight: 700; }
+    .prose hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+    .effective-date {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text3);
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 32px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <div class="logo-mark">MX</div>
+      <span class="logo-name">MacroX</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li><a href="privacy.html" style="color:var(--text)">Privacy</a></li>
+      <li><a class="nav-cta" href="https://chrome.google.com/webstore/detail/macrox/EXTENSION_ID" target="_blank" rel="noopener">Add to Chrome</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <div class="prose">
+      <div class="section-label">Legal</div>
+      <h1 class="section-title">Privacy Policy</h1>
+      <span class="effective-date">Effective: May 3, 2026</span>
+
+      <p>MacroX ("we", "our", or "the extension") is a Chrome browser extension that records and replays user interactions on web pages. This policy explains what data the extension touches, where it goes, and your rights.</p>
+
+      <hr>
+
+      <h2>1. Data We Collect</h2>
+
+      <h3>User Activity Data (stored locally only)</h3>
+      <p>When you start a recording, MacroX captures the following user activity on the active browser tab:</p>
+      <ul>
+        <li>Mouse clicks, double-clicks, and right-clicks (coordinates and target element)</li>
+        <li>Keyboard events (key names and modifier keys — <strong>not</strong> passwords; password fields are explicitly excluded)</li>
+        <li>Scroll positions</li>
+        <li>Text input values (excluding password fields)</li>
+        <li>Form change events (checkbox states, select values)</li>
+        <li>Mouse movement coordinates (throttled)</li>
+        <li>Clipboard text from copy/cut events</li>
+      </ul>
+      <p><strong>All of this data is stored exclusively in <code>chrome.storage.local</code> — on your own device. It is never transmitted to any server, never uploaded to the cloud, and never leaves your browser.</strong></p>
+
+      <h3>Extension Settings</h3>
+      <p>MacroX stores your saved macros, hotkey assignments, playback preferences, and Pro license status in <code>chrome.storage.local</code>. This data lives only on your device.</p>
+
+      <hr>
+
+      <h2>2. Data We Do NOT Collect</h2>
+      <ul>
+        <li>We do <strong>not</strong> collect names, email addresses, or any personally identifiable information</li>
+        <li>We do <strong>not</strong> collect passwords or authentication credentials (password fields are skipped by the recorder)</li>
+        <li>We do <strong>not</strong> collect browsing history or visited URLs</li>
+        <li>We do <strong>not</strong> collect financial information</li>
+        <li>We do <strong>not</strong> use analytics, telemetry, or crash reporting services</li>
+        <li>We do <strong>not</strong> use cookies</li>
+      </ul>
+
+      <hr>
+
+      <h2>3. Payment Processing</h2>
+      <p>MacroX Pro upgrades are processed by <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>, which uses <a href="https://stripe.com" target="_blank" rel="noopener">Stripe</a> as its payment processor. When you purchase Pro:</p>
+      <ul>
+        <li>Your payment information is handled entirely by Stripe — MacroX never sees or stores your card details</li>
+        <li>ExtensionPay stores only your payment status (paid / not paid) and the email address used for checkout</li>
+        <li>See <a href="https://extensionpay.com/privacy" target="_blank" rel="noopener">ExtensionPay's Privacy Policy</a> and <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe's Privacy Policy</a> for details</li>
+      </ul>
+
+      <hr>
+
+      <h2>4. Host Permissions</h2>
+      <p>MacroX requests access to <code>&lt;all_urls&gt;</code> so it can record and replay macros on any website the user chooses. The extension does not use this permission to read page content for any purpose other than recording the user's own interactions during an active, user-initiated recording session.</p>
+
+      <hr>
+
+      <h2>5. Data Sharing</h2>
+      <p>We do not sell, trade, rent, or otherwise transfer your data to any third party. The only external service MacroX communicates with is ExtensionPay (solely to verify your Pro license status).</p>
+
+      <hr>
+
+      <h2>6. Data Retention and Deletion</h2>
+      <p>All macro data is stored locally in your browser via <code>chrome.storage.local</code>. You can delete any macro at any time from the MacroX sidebar. Uninstalling the extension removes all locally stored data.</p>
+
+      <hr>
+
+      <h2>7. Children's Privacy</h2>
+      <p>MacroX is not directed at children under 13. We do not knowingly collect any data from children.</p>
+
+      <hr>
+
+      <h2>8. Changes to This Policy</h2>
+      <p>If we make material changes to this privacy policy, we will update the effective date above and (where possible) notify users via the Chrome Web Store update notes.</p>
+
+      <hr>
+
+      <h2>9. Contact</h2>
+      <p>Questions about this privacy policy? Open an issue on our <a href="https://github.com/sn3ll/macrox-chrome-extension" target="_blank" rel="noopener">GitHub repository</a> or contact us at the email listed on our Chrome Web Store page.</p>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div style="display:flex;align-items:center;gap:10px">
+      <div class="logo-mark">MX</div>
+      <span style="font-size:13px;color:var(--text3)">MacroX © 2026</span>
+    </div>
+    <div style="display:flex;gap:20px">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://chrome.google.com/webstore/detail/macrox/EXTENSION_ID" target="_blank" rel="noopener">Chrome Web Store</a>
+    </div>
+  </footer>
+
+</body>
+</html>
